@@ -1,13 +1,20 @@
 $(document).ready(function() {
 
-    $('.readmore').click(toggleShow);
-    function toggleShow(event) {
+    $('.readmore').click(showArticle);
+    $('.readless').click(hideArticle);
+
+    function showArticle(event) {
       event.preventDefault();
-      $('#show-this-on-click').slideToggle();
+      $('#show-this-on-click').slideDown();
       $('.readmore').hide();
       $('.readless').show();
-  
+    }
 
+    function hideArticle(event) {
+      event.preventDefault();
+      $('#show-this-on-click').slideUp();
+      $('.readmore').show();
+      $('.readless').hide();
 
     }
 
