@@ -4,8 +4,11 @@ $(document).ready(function() {
     function toggleShow(event) {
       event.preventDefault();
       $('#show-this-on-click').slideToggle();
-      $('p.readless hide').show();
-    }
+      $('.readmore').hide();
+      $('.readless').show();
+  
 
+
+    }
 
 });
